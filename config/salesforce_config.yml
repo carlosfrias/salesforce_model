@@ -1,0 +1,15 @@
+asf-rest-config:
+  # Either "username_password" or "omni_auth"
+  auth_scheme: username_password
+  #username_password
+  adapter: activesalesforce
+  url: https://login.salesforce.com
+  username: jon.m.aquan-assee@accenture.com
+  password: refAppDemo2Mnm4JBRimYbs7D41wCmg14YX
+  api_version: 21.0
+  # Not using OmniAuth this time.
+  #omni_auth
+#  consumer_key: 3MVG9yZ.WNe6byQCLI.QUTT6gqzY2IXTp6RR1DjZleXRgD8d.Crh5ywxeei._hGZYLPPiOF9x7txFfp7ICKwT
+#  consumer_secret: 2181893019079057516
+  consumer: refAppDemo2Mnm4JBRimYbs7D41wCmg14YX
+  consumer_secret: 2181893019079057516
