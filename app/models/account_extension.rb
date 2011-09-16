@@ -8,9 +8,11 @@ module Salesforce
           if params.respond_to? :to_conditions
             query = "SELECT #{known_attributes.join(', ')} FROM #{self.name.split('::')[-1]} WHERE #{params.to_conditions}"
             resp = run_soql query
-            ActiveSupport::JSON.decode(resp.body)['records'][0]
+            return ActiveSupport::JSON.decode(resp.body)['records'][0]
           else
-            super.find(params)
+            resp = super.find(params)
+            puts "From ASFRest::Account find we get:  #{resp.inspect}"
+            return resp
           end
         end
       end

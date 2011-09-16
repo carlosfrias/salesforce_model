@@ -8,7 +8,7 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 #gem 'hotfusionman-activerecord-activesalesforce-adapter', :git => 'https://github.com/ArunKumar/hotfusionman-activerecord-activesalesforce-adapter.git'
 gem 'asf-rest-adapter'
-gem 'rspec-rails', :group => :test
+gem 'rspec-rails', :groups => [:test, :development]
 
 # Use unicorn as the web server
 # gem 'unicorn'
